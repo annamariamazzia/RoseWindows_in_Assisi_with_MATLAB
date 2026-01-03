@@ -22,12 +22,6 @@ yu=xu; % y-coordinated of the centroids. Only for the
 % central semicircle is the y-coordinate not equal to zero
 t=xu; 
 for i=1:3
-     % indm - previous index along the circle
-     if i==1 
-         indm=3;
-     else
-         indm=i-1;
-     end  
      % centroids of the three circles
     xu(i)=(xv(i))/2;
     if i==1
