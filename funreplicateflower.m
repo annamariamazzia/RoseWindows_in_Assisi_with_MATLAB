@@ -18,7 +18,7 @@ xx=r*cos(theta1(1:n)); yy=r*sin(theta1(1:n));  % The coordinates of the centroid
 %around the band
 rc1=norm([xx(1) yy(1)]-[xx(2) yy(2)])/2; % the radius of the circles where
 % we place the parametrice curves.
-dilfact=max([xxf,yyf]);  % dilation factor to have the initial shape in the
+dilfact=max(abs([xxf,yyf]));  % dilation factor to have the initial shape in the
 %  unit circle.
 xxf=xxf/dilfact; yyf=yyf/dilfact; % the new points to be translated and rotated.
 % rotation matrix function
